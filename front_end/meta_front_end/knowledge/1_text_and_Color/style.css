@@ -1,0 +1,12 @@
+/** Text Manipulation */
+h1,p{
+    color: red;
+    /* Text Font and Size */
+    font-family: "Courier New", monospace;
+    font-size: 12px; /* you can use large to small too if you want */ 
+    /* Text Transformation */
+    text-transform: uppercase;/* transform the text */
+    /* Text Decoration */
+    text-decoration: underline blue wavy 2px;
+
+}

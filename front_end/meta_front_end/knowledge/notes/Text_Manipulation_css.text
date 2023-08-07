@@ -1,0 +1,25 @@
+Text Manipulation
+
+0 Text Color
+    The color property sets the color of text. The following CSS sets the text color for all paragraph elements to red.
+
+1 Text Font and Size 
+    1 To set the font used by text in CSS you use the font-family property.
+        2 To set the size of the font, the font-size property is used.
+
+2 Text Transformation 
+    1 Text transformation is useful if you want to ensure the correct capitalization of the text content. the CSS rule will change all selected element to uppercase using the text-transform property:
+
+        2 The most commonly used values for the text-transform property are:  uppercase,  lowercase,  capitalize  and none. The default value used is none, which means the text displays as it was written in the HTML document.
+
+3 Text Decoration
+    1 The text-decoration property is useful to apply additional decoration to text such as underlining and line-through (strikethrough).
+
+        2 It is possible to set the color, thickness and styling of the decoration too
+
+            3 If this is confusing, don't worry. These properties can be individually set using the text-decoration-line, text-decoration-color, text-decoration-style and text-decoration-thickness properties. Let's use the same example again and define it using the individual properties:
+
+                4 The most common text-decoration-line values used are: underline, overline, line-through and none. None is the default value to use no text decoration.
+
+                    5 There are many styles available for the text-decoration-style  property;  solid,  double,  dotted,  dashed  and  wavy. The text-decoration-style property requires the decoration line to be defined. If the decoration style is not specified, solid will be used.
+

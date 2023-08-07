@@ -1,0 +1,30 @@
+Alignment basics
+
+1 Text Alignment
+
+    1 Aligning text within an HTML element is very simple. To do this, you use the text-align CSS property. In the following example, the CSS rule is setting the text of all paragraph elements to be center aligned.
+
+        2 Text alignment can be set to left, right, center and justify.
+
+            3 The justify alignment spreads the text out so that every line of the text has the same width.
+
+2 HTML Element Alignment , Center Alignment
+    1  Aligning an HTML element is done by changing the properties of its box model and how it impacts the document flow.
+
+        2 To center align an element, you set a width on the element and push its margins out to fill the remaining available space of the parent element as in the following HTML structure:
+
+        2 In your CSS, you'll set the parent element to have a red border to visualize the space it occupies:
+
+        2 The child element will have a width equal to 50% of the parent element with a padding of 20 pixels. Note that padding: 20px is shorthand for setting the padding top, bottom, left and right to 20px. To visualize the space it occupies, set the border to green:
+
+        2 To align the element to the center, set its margin property to auto. The auto will tell the browser to calculate the margin automatically based on the space available.
+
+            3 If you want to align an inline element like img, you will need to change it to a block-level element. Similar to the div example, you add the img to a parent element:
+
+            3 To be more precise, in CSS you can set only the left and right margins to auto. This allows you to set the top and bottom margins to specific values if needed.
+
+
+3 HTML Element Left / Right Alignment
+    1 The two most common ways to left and right align elements are to use the float property and the position property.
+
+        2 The float property sets an element's position relative to the text content within a parent element. Text will wrap around the element.

@@ -1,0 +1,49 @@
+
+body{
+    background-color: #121212;
+    color: white;
+}
+
+/** Alignment basics */
+/** Center Alignment   */
+
+h1,p{
+    
+    text-align: center; /* align the targeted text in the middle of the screen */
+}
+
+
+/* *Block Elements */
+
+/** parent div */
+.parent{
+    border:4px solid red; /*changes the color of the border */
+}
+/* *child dive */
+.child{
+    width: 50%; /* setting the with of the element to be 50% of the parent element */
+    padding: 20px; /*setting the padding size to be 20px in all spots top,right , bottom, left  */
+    border: 4px solid green;/*changing the side of the border making it visible and changing the color of it */
+    margin: auto;/* telling the browser to automatically calculate the margin based on the space available */
+}
+
+/** in-line Elements */
+
+.parent2{
+    border:4px solid blue; /* making the border visible and changes its color*/
+}
+
+.child2{
+    display: block; /*making the into a block element*/
+    width: 50%; /*making the image be half of the with of the parent elements*/
+    border: 2px solid red; /*making the border visible and  changing its color*/
+    margin: auto; /* alining horizontally the element*/
+
+}
+
+/** left and right Alignment */
+
+.child3{
+    float:right;/*positions the image or the element to the left or to the right and makes text wrap around it  */
+    width: 500px;
+}
