@@ -5,14 +5,32 @@ console.log(bst);
 
 // console.log(bst.isEmpty());
 
-bst.insert(10);
-bst.insert(8);
-bst.insert(13);
-bst.insert(7);
-bst.insert(9);
-bst.insert(11);
+bst.insert(25);
 bst.insert(15);
-console.log(bst.min());
-console.log(bst.max());
+bst.insert(50);
+bst.insert(10);
+bst.insert(35);
+bst.insert(22);
+bst.insert(70);
+bst.insert(4);
+bst.insert(31);
+bst.insert(12);
+bst.insert(44);
+bst.insert(18);
+bst.insert(66);
+bst.insert(24);
+bst.insert(90);
 
-console.log(bst.contains(11));
+// console.log(bst.min());
+// console.log(bst.max());
+
+// console.log(bst.contains(11));
+// console.log(bst.containsRecursive(100));
+// console.log(bst.range());
+
+console.log("pre");
+console.log(bst.toArrPreOrder());
+console.log("in");
+console.log(bst.toArrInOrder());
+console.log("post");
+console.log(bst.toArrPostOrder());
