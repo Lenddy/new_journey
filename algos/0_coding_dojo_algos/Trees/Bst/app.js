@@ -28,9 +28,11 @@ bst.insert(90);
 // console.log(bst.containsRecursive(100));
 // console.log(bst.range());
 
-console.log("pre");
-console.log(bst.toArrPreOrder());
-console.log("in");
-console.log(bst.toArrInOrder());
-console.log("post");
-console.log(bst.toArrPostOrder());
+// console.log("pre");
+// console.log(bst.toArrPreOrder());
+// console.log("in");
+// console.log(bst.toArrInOrder());
+// console.log("post");
+// console.log(bst.toArrPostOrder());
+
+console.log(bst.toArrayLevelOrder());

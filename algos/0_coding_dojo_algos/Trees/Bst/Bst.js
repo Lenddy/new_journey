@@ -145,6 +145,7 @@ class BinarySearchTree {
 		return vals; // returns the array with the values from left
 	}
 
+	// dfs preOrder:  () lest, currNode, right)
 	toArrInOrder(current = this.root, vals = []) {
 		if (this.isEmpty()) {
 			return vals;
@@ -157,6 +158,8 @@ class BinarySearchTree {
 		// console.log(vals);
 		return vals;
 	}
+
+	// dfs preOrder:  () lest,  right, currNode)
 	toArrPostOrder(current = this.root, vals = []) {
 		if (this.isEmpty()) {
 			return vals;
@@ -169,6 +172,46 @@ class BinarySearchTree {
 		// console.log(vals);
 		return vals;
 	}
+
+	//bfs order : horizantal rows top down lsft to right
+	// converts this bst into an array following Breadth fist search order
+	toArrayLevelOrder(current = this.root, vals = []) {
+		//checking to see if the tree is empty
+		if (this.isEmpty() || current === null) {
+			return vals;
+		}
+
+		// make a queue
+		let q = [current]; // initializing  q to have the root node by default
+		let iq;
+
+		// loop while there is length in q
+		while (q.length) {
+			// stores  the first item that was erased from the q array in  the iq variable
+			iq = q.shift();
+
+			//this checks to see if there is a node store in the left of the current node  and if there is it adds it to the q array
+			if (iq.left) {
+				q.push(iq.left);
+			}
+			//this checks to see if there is a node store in the right of the current node  and if there is it adds it to the q array
+			if (iq.right) {
+				q.push(iq.right);
+			}
+			//this adds the data of the deleted node that was in the q array in the vals array
+			vals.push(iq.data);
+		}
+		return vals;
+	}
+
+	// recursively counts the total number of node in the tree
+	size(current = this.root) {}
+
+	// calculates the height of the tree which is based on how many nodes from top to bottom (whichever side is taller )
+	height(current = this.root) {}
+
+	// determines if this tree is full tree a full tree is a tree where every node has both a leaf and right except fo the leaf (last node)
+	isFull(current = this.root) {}
 }
 
 // const bst = new BinarySearchTree();
