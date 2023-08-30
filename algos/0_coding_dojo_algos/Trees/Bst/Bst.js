@@ -205,7 +205,10 @@ class BinarySearchTree {
 	}
 
 	// recursively counts the total number of node in the tree
-	size(current = this.root) {}
+	size(current = this.root) {
+		
+
+	}
 
 	// calculates the height of the tree which is based on how many nodes from top to bottom (whichever side is taller )
 	height(current = this.root) {}
